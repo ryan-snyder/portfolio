@@ -4,6 +4,8 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@re
 import styles from './tailwind.css';
 import globalStyles from './styles/globals.css';
 
+import { AppHeader } from './components/header';
+
 export const meta: MetaFunction = () => ({
 	charset: 'utf-8',
 	title: 'Remix DnB Stack',
@@ -23,7 +25,10 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
+				<AppHeader />
+				<main>
+					<Outlet />
+				</main>
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />

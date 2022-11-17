@@ -1,9 +1,17 @@
 import { Link } from '@remix-run/react';
 
+/**
+ * TODO
+ * 
+ * create:
+ * About page
+ * Portfolio/past work page
+ * Experience page
+ */
 const Index = () => (
 	<div className="flex justify-start items-center pt-20 h-screen w-screen flex-col text-center">
-		<h1 className="text-7xl pb-10">Remix DnB Stack</h1>
-		<h2>This Stack contains a starter template for developing Remix Apps in vercel.</h2>
+		<h1 className="pb-10">Ryan Snyder</h1>
+		<h2>A Frontend Developer with experience in building user driven experiences</h2>
 		<h2 className="py-10">
 			In the{' '}
 			<Link className="underline" to="/books">
